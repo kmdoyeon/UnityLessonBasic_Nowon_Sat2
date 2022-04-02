@@ -5,7 +5,7 @@ using UnityEngine;
 public class TileInfo : MonoBehaviour
 {
     public int index;
-    public void TileEvent()
+    public virtual void TileEvent()
     {
         Debug.Log($"Index of this tile : {index} ");
     }

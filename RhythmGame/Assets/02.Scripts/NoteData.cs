@@ -19,4 +19,12 @@ public struct NoteData
 {
     public float time; // 뮤직비디오의 시간
     public KeyCode keyCode; // 키보드 입력
+    public float speed;
+}
+
+public enum NoteType
+{
+    None,
+    Down,
+    Up,
 }

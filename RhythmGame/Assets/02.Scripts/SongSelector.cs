@@ -14,7 +14,13 @@ public class SongSelector : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
+    public bool IsPlayable
+    {
+        get 
+        { 
+            return (clip!=null) && (songData!=null) ? true : false;     
+        }
+    }
     public VideoClip clip;
     public SongData songData;
 
